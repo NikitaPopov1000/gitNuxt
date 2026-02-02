@@ -8,9 +8,19 @@ console.log(categories)
 <div class="w-full container mx-auto">
   <CarouselMain />
   <h6 class="title-category pb-7">Каталог</h6>
-  <div class="flex gap-4" v-for="category in categories" :key='category.id'>
-  <CardCategory :title="category.title"/>
-  </div>
+  <UCarousel
+      v-slot="{ item }"
+      :items="categories"
+      :ui="{
+        item: 'basis-1/5 px-2',
+         container: '!overflow-visible'
+      }"
+      arrows
+      class="w-full"
+  >
+
+    <CardCategory :title="item.title" />
+  </UCarousel>
   <div class="stocks py-12">
     <h6 class="title-stocks">Акции</h6>
     <CardProduct />

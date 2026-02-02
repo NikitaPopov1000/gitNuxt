@@ -4,4 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
   modules: ['@nuxt/ui'],
+
 })
