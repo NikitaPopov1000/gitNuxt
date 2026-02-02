@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+
+@font-face {
+    font-family: "Dark Mono";
+    src: url("../fonts/Disket-Mono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto_Regular";
+    src: url("../fonts/static/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto_Light";
+    src: url("../fonts/static/Roboto-Light.ttf") format("truetype");
+}
+
+.dark_momo {
+    font-family: "Dark Mono";
+}
+
+body, html {
+    background: white;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    background: white;
+    font-family: "Roboto_Regular";
+}
+
+p, span, a {
+    font-family: "Roboto_Light";
+}
